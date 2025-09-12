@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Project from "../components/Project.astro";
+const projects = [
+  {
+    title: "Swansea University Race Engineering Car Dashboard",
+    desc: [
+      "Developed a custom interface graphical interface with Squareline Studio and lvgl",
+      "Led a team of developers for nine months",
+      "Collaborated with several other departments"
+    ],
+    tech: ["C/C++", "Python", "Platformio", "Espressif IDF", "Squareline Studio", "Arduino", "ESP32", "LVGL", "Raspberry Pi Pico", "3d Printing", "Canbus"]
+  }
+];
+---
+
+<BaseLayout title="Computer Science">
+  <div class="content-container">
+    <h1>Computer Science</h1>
+    <section class="items-container">
+        <div class="resouce-items">
+            {projects.map(project => (
+              <Project 
+                title={project.title} 
+                desc={project.desc}
+                tech={project.tech}
+              />
+            ))}
+          </div>
+    </section>
+  </div>
+</BaseLayout>

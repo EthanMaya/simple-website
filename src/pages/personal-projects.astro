@@ -1,0 +1,29 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Project from "../components/Project.astro";
+const projects = [
+  {
+    title: "Nixos",
+    desc: [
+      "My workstation uses Nixos"
+    ],
+    tech: ["Nixos"]
+  }
+];
+---
+<BaseLayout title="Personal Projects">
+  <div class="content-container">
+    <h1>Personal Projects</h1>
+    <section class="items-container">
+        <div class="resouce-items">
+            {projects.map(project => (
+              <Project 
+                title={project.title} 
+                desc={project.desc}
+                tech={project.tech}
+              />
+            ))}
+          </div>
+    </section>
+  </div>
+</BaseLayout>

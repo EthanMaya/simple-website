@@ -1,0 +1,39 @@
+---
+import Header from "../components/Header.astro";
+import Sidebar from "../components/Sidebar.astro";
+import Footer from "../components/Footer.astro";
+import { ViewTransitions } from 'astro:transitions';
+interface HeaderProps {
+  title: string;
+}
+
+const {title = "Title", backButton = null, showFooter = true} = Astro.props;
+const pathname = Astro.url.pathname;
+const selectedItem = pathname.split("/")[1] === "posts" ? "blog" : (pathname.split("/")[1] || "home");
+const titleBack = " | Ethan Maya"
+---
+<!DOCTYPE html>
+<Header title={title+titleBack}/>
+<html>
+  <body>
+    <div class="content">
+      <Sidebar selectedItem={selectedItem} />
+      <nav class="main">
+        <div class="container">
+            {backButton && (
+          <div class="back-nav-container">
+            <a href={backButton} class="back-nav-button w-inline-block"
+              ><img src="/assets/back.svg" loading="lazy" alt="" class="back-nav-img" />
+              <div>Back</div>
+            </a>
+          </div>
+          )}
+        <div class="container">
+          <main class="fold-content-container">
+              <slot/>
+          </main>
+    {showFooter && (
+    <Footer />
+    )}
+  </body>
+</html>
