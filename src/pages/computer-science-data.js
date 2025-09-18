@@ -115,7 +115,17 @@ export const skills_and_tools = [
   {
     link: "",
     title: "Development Practices",
-    sum: "Git & GitHub (used across all projects), collaborative development, remote testing & deployment",
+    sum: "Git & GitHub (used across all projects), collaborative development, remote testing & deployment, Bash & PowerShell scripting",
+    desc: [
+
+    ],
+    tech_and_tools: "",
+    tech: []
+    },
+    {
+    link: "",
+    title: "Programming Practice",
+    sum: "I regularly practice algorithms and problem-solving through platforms like LeetCode, Project Euler, and Codewars.”",
     desc: [
 
     ],
@@ -125,7 +135,7 @@ export const skills_and_tools = [
   {
     link: "",
     title: "Other Tools",
-    sum: "Squareline Studio, LVGL, Arduino, CAN bus, 3D printing, CAD",
+    sum: "Squareline Studio, LVGL, Arduino, CAN bus, 3D printing, CAD, LaTeX, R",
     desc: [
 
     ],

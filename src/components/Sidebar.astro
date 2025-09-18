@@ -97,18 +97,18 @@ const { selectedItem } = Astro.props;
         <div>Things I've Done</div>
       </a>
       <a
-        href="/blog"
+        href="/achievements"
         class={`nav-link-container w-inline-block ${
-          selectedItem === 'blog' ? 'w--current' : ''
+          selectedItem === 'achievements' ? 'w--current' : ''
         }`}
       >
         <img
-          src="/assets/blogger-white-icon.svg"
+          src="/assets/achievement.svg"
           loading="eager"
           alt=""
           class="nav-link-image"
         />
-        <div>Blog</div>
+        <div>Achievements</div>
       </a>
       <a
         href="/about"

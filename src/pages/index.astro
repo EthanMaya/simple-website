@@ -1,7 +1,7 @@
 ---
 import { addIssueToContext, any } from "astro:schema";
 import BaseLayout from "../layouts/BaseLayout.astro"
-import {computer_science, skills_and_tools} from "./projects-data.js";
+import {computer_science, skills_and_tools} from "./computer-science-data.js";
 const csTags = [...new Set(computer_science.concat(skills_and_tools).flatMap(p => p.tech))].sort((a, b) => a.localeCompare(b));
 ---
 <BaseLayout title="Home">
@@ -52,4 +52,21 @@ const csTags = [...new Set(computer_science.concat(skills_and_tools).flatMap(p =
   </div> -->
 </div>
 </a>  
+<!-- Achievements -->
+<a href="/achievements" class="projects-container">
+<div class="single-projects-category">
+  <div class="projects-category-image-container devops-img">
+    <img src="./assets/achievement.svg" loading="lazy" alt="" class="projects-category-image" />
+  </div>
+</div>
+<div class="single-projects-content">
+  <h4>Achievements</h4>
+  <!-- <div class="tech-tools-container">
+    <div class="mini-label-white gray-color">Technologies &amp; tools</div>
+    <div class="chips-container chips-container-small-width">
+      <div class="single-chip small-chip">Working</div>
+    </div>
+  </div> -->
+</div>
+</a> 
 </BaseLayout>

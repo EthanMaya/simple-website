@@ -4,12 +4,11 @@ title: 'Roadmap for website'
 pubDate: 2022-07-01
 description: "My plan for the website and how I'm going to implement it."
 author: 'Ethan Maya'
-image:
-    url: 'https://docs.astro.build/assets/rose.webp'
-    alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["website"]
 ---
-
+### What this blog is.
+I added blogging functionality to the website because I thought it might be cool. I then realised that I'm never going to write anything so removed all links to it. It's handy for occasionally writing down plans for the website so although I've removed everything linking to it, I'm leaving the posts.
+You're welcome to read through it but be aware that anything said here is not actually official.
 ### Stuff to do before going live.
 ### Content
 
@@ -89,7 +88,7 @@ animation, blender, music
 
 ### CV
 worked at morrisons, sky sprouts. did 70 hours a week, worked on click and collect, then worked on srp. I also helped around the store in the bakery,
-kitchen, on the shop floor working fresh, frozen, and. also worked the deliveries in the night
+kitchen, on the shop floor working fresh, frozen, and also worked the deliveries in the night
 
 
 

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="logo4.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     units="px"
+     inkscape:zoom="0.905042"
+     inkscape:cx="220.98422"
+     inkscape:cy="436.44383"
+     inkscape:window-width="1920"
+     inkscape:window-height="1008"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#1b1d4c;fill-opacity:1"
+       id="rect5195"
+       width="518.71466"
+       height="505.69141"
+       x="-2.7550194"
+       y="3.1233544"
+       ry="67.883316"
+       rx="259.19318" />
+    <path
+       id="text2562"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:458.255px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.85923"
+       d="M 0.29492188 61.599609 L 0.29492188 450.40039 L 177.00195 450.40039 L 177.00195 450.44727 L 264.94336 450.44727 L 264.94336 450.40039 L 286.76172 450.40039 L 286.76172 108.99609 L 360.78125 375.66211 L 399.80859 375.66211 L 473.82812 108.99609 L 473.82812 450.40039 L 511.70312 450.40039 L 511.70312 61.599609 L 453.83398 61.599609 L 380.19922 326.18164 L 306.94922 61.599609 L 249.07812 61.599609 L 249.07812 406.16992 L 185.24805 406.16992 L 185.24805 406.13086 L 39.130859 406.13086 L 39.130859 265.24414 L 175.82812 265.24414 L 175.82812 220.97461 L 39.130859 220.97461 L 39.130859 105.87109 L 181.78711 105.87109 L 181.78711 61.599609 L 0.29492188 61.599609 z " />
+  </g>
+</svg>

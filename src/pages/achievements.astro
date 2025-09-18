@@ -1,0 +1,58 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Project from "../components/Project.astro";
+const projects = [
+    {
+        link: "",
+        title: "GCHQ CyberFirst Coding Challenges",
+        sum: "Completed all tasks covering algorithms, cryptography, and problem-solving under time constraints.",
+        desc: [],
+        tech_and_tools: "",
+        tech: []
+    },
+    {
+        link: "",
+        title: "Team Lead - Zipwire Project",
+        sum: "Designed and managed the installation of a 65m zipwire, raised £1600, coordinated insurance and H&S, and liaised with contractors.",
+        desc: [],
+        tech_and_tools: "",
+        tech: []
+    },
+    {
+        link: "",
+        title: "National Children’s Orchestra of Great Britain",
+        sum: "Performed violin at national level, developing teamwork and discipline.",
+        desc: [],
+        tech_and_tools: "",
+        tech: []
+    },
+    {
+        link: "",
+        title: "",
+        sum: "",
+        desc: [],
+        tech_and_tools: "",
+        tech: []
+    },
+  
+];
+---
+<BaseLayout title="Achievements" backButton="/">
+  <div class="content-container">
+    <h1>Achievements</h1>
+    <section class="items-container">
+        <div class="resouce-items">
+            {projects.map(project => (
+              <Project 
+                link={project.link}
+                title={project.title} 
+                sum={project.sum}
+                desc={project.desc}
+                tech_and_tools={project.tech_and_tools}
+                tech={project.tech}
+              />
+            ))}
+          </div>
+    </section>
+  </div>
+</BaseLayout>
