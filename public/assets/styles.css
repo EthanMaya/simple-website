@@ -76,6 +76,10 @@ section {
   display: block;
 }
 
+a.sidebar {
+  
+}
+
 a {
   background-color: var(--black-rgba);
 }
@@ -516,6 +520,13 @@ p {
 .nav-link-image {
   width: 24px;
   opacity: 0.48;
+}
+.nav-link-container:link {
+  color: var(--grey-small-text);
+}
+
+.nav-link-container:visited {
+  color: var(--grey-small-text);
 }
 
 .nav-link-container {
