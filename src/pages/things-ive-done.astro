@@ -1,0 +1,105 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Project from "../components/Project.astro";
+const projects = [
+  {
+    link: "",
+    title: "AI Glider Project",
+    sum: "At school, I initiated and led a team of 20 students to design and build an autonomous glider for slope soaring. Although the project didn’t succeed, it was a formative experience in project management, collaboration, and the challenges of combining physics and software in real-world applications.",
+    desc: [
+
+    ],
+    tech_and_tools: "",
+    tech: []
+  },
+  {
+    link: "",
+    title: "Flight Experience",
+    sum: "",
+    desc: [
+      "Gliding from age 12-14 in the Cotswolds, before moving on to paragliding on Dartmoor and along the coast.",
+
+      "Built and flew model aircraft for over 6 years."
+    ],
+    tech_and_tools: "",
+    tech: []
+    
+  },
+  {
+    link: "",
+    title: "Early Sailing & Boatbuilding",
+    sum: "",
+    desc: [
+      "Learned to sail at 9 and regularly sailed a Laser 2 single-handed with trapeze.",
+
+      "Built and iteratively improved a home-made catamaran starting at age 8, beginning with plastic-bottle hulls and eventually adding a lug rig, jib, and enlarged hulls.",
+
+      "Restored an International Moth dinghy, carrying out glass fibre hull repairs and mast reinforcement."
+    ],
+    tech_and_tools: "",
+    tech: []
+  },
+  {
+    link: "",
+    title: "Yacht Design Concepts",
+    sum: "Designed multiple yacht concepts inspired by professional designers I knew. While none were physically built, this gave me early experience in applying engineering principles to practical design problems.",
+    desc: [],
+    tech_and_tools: "",
+    tech: []
+    
+  },
+  {
+    link: "",
+    title: "Other Adventures",
+    sum: "",
+    desc: [
+      "White-water kayaking from age 10, completing Dartmoor’s Loop, Lower, and Lower Lower sections solo.",
+
+      "Crew aboard the classic yacht Sybil of Cumae.",
+
+      "Performed violin in the National Children’s Orchestra of Great Britain twice."
+    ],
+    tech_and_tools: "",
+    tech: []
+    
+  },
+  {
+    link: "",
+    title: "",
+    sum: "",
+    desc: [],
+    tech_and_tools: "",
+    tech: []
+    
+  },
+  {
+    link: "",
+    title: "",
+    sum: "",
+    desc: [],
+    tech_and_tools: "",
+    tech: []
+    
+  },
+  
+];
+---
+<BaseLayout title="Things I've Done" backButton="/">
+  <div class="content-container">
+    <h1>Things I've Done</h1>
+    <section class="items-container">
+        <div class="resouce-items">
+            {projects.map(project => (
+              <Project 
+                link={project.link}
+                title={project.title} 
+                sum={project.sum}
+                desc={project.desc}
+                tech_and_tools={project.tech_and_tools}
+                tech={project.tech}
+              />
+            ))}
+          </div>
+    </section>
+  </div>
+</BaseLayout>

@@ -11,7 +11,35 @@
   --white-ddd: #ddd;
   --red-rgba: rgba(182, 44, 44, 0.884);
   --white: white;
-  --grey-a8a8a8: #a8a8a8;
+  --grey-small-text: #f3f3f3;
+  --bg-blue: #181f2c;
+  --black-353535: #353535;
+  --bg-black-image: rgba(28, 28, 28, 0.64);
+  --bg-black-image-faded: rgba(28, 28, 28, 0.24);
+  --black-363636: #363636;
+  --black-0c1016: #0c1016;
+  --black-box-shadow: rgba(8, 8, 8, 0.82);
+  --black-000: #000;
+  --black-rgba-53-53-53-012: rgba(53, 53, 53, 0.12);
+  --grey-rgba: rgba(255, 255, 255, 0.24);
+  --blue-rgba: rgb(24, 31, 44);
+  --dark-blue-rgb: rgb(12, 16, 22);
+  --grey-2b2b2b: #2b2b2b;
+  --links: #a59eff;
+  --links-visited: #b9b9b9;
+
+}
+/* Light theme */
+.dark {
+  --bg-color: #001a4b;
+  --black-rgba: rgba(0, 0, 0, 0);
+  --black-333: #333;
+  --white-fff: #fff;
+  --blue-3898ec: #3898ec;
+  --white-ddd: #ddd;
+  --red-rgba: rgba(182, 44, 44, 0.884);
+  --white: white;
+  --grey-small-text: #e4e2e2;
   --bg-blue: #181f2c;
   --black-353535: #353535;
   --bg-black-image: rgba(28, 28, 28, 0.64);
@@ -50,6 +78,14 @@ section {
 
 a {
   background-color: var(--black-rgba);
+}
+
+a:link {
+  color: var(--links);
+}
+
+a:visited {
+  color: var(--links-visited);
 }
 
 a:active,
@@ -116,6 +152,7 @@ img {
 }
 
 h1,
+h2
 h3,
 h4 {
   margin-bottom: 10px;
@@ -126,6 +163,12 @@ h1 {
   margin-top: 20px;
   font-size: 38px;
   line-height: 44px;
+}
+
+h2 {
+  margin-top: 50px;
+  font-size: 31px;
+  line-height: 37px;
 }
 
 h3 {
@@ -279,6 +322,15 @@ h1 {
   line-height: 72px;
 }
 
+h2 {
+  color: var(--white-fff);
+  margin-top: 50;
+  margin-bottom: 12px;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 42px;
+}
+
 h3 {
   color: var(--white-fff);
   margin-top: 0;
@@ -298,7 +350,7 @@ h4 {
 }
 
 p {
-  color: var(--grey-a8a8a8);
+  color: var(--grey-small-text);
   margin-bottom: 10px;
   font-size: 16px;
   line-height: 26px;
@@ -336,7 +388,7 @@ p {
 }
 
 .label-gray {
-  color: var(--grey-a8a8a8);
+  color: var(--grey-small-text);
   font-size: 14px;
   line-height: 22px;
 }
@@ -417,7 +469,7 @@ p {
 }
 
 .mini-label-white.gray-color {
-  color: var(--grey-a8a8a8);
+  color: var(--grey-small-text);
 }
 
 .chips-container {
@@ -469,7 +521,7 @@ p {
 .nav-link-container {
   grid-column-gap: 12px;
   grid-row-gap: 12px;
-  color: var(--grey-a8a8a8);
+  color: var(--grey-small-text);
   text-transform: capitalize;
   border: 1px solid var(--black-rgba);
   border-radius: 8px;
@@ -568,7 +620,7 @@ p {
 }
 
 .project-desc {
-  color: var(--grey-a8a8a8);
+  color: var(--grey-small-text);
   line-height: 24px;
 }
 

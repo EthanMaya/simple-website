@@ -1,7 +1,4 @@
----
-import BaseLayout from "../layouts/BaseLayout.astro";
-import Project from "../components/Project.astro";
-const projects = [
+const computer_science = [
   {
     link: "https://github.com/EthanMaya/swansea-fs-dashboard",
     title: "Swansea University Race Engineering Car Dash",
@@ -69,7 +66,7 @@ const projects = [
   },
   
 ];
-const projects2 = [
+const skills_and_tools = [
  {
     link: "",
     title: "Programming Languages",
@@ -132,38 +129,3 @@ const projects2 = [
   },
   
 ];
----
-
-<BaseLayout title="Computer Science" backButton="/">
-  <div class="content-container">
-    <h1>Computer Science</h1>
-    <section class="items-container">
-        <div class="resouce-items">
-            {projects.map(project => (
-              <Project 
-                link={project.link}
-                title={project.title} 
-                sum={project.sum}
-                desc={project.desc}
-                tech={project.tech}
-              />
-            ))}
-          </div>
-    </section>
-    <h2>Skills & Tools</h2>
-    <section class="items-container">
-        <div class="resouce-items">
-            {projects2.map(project => (
-              <Project 
-                link={project.link}
-                title={project.title} 
-                sum={project.sum}
-                desc={project.desc}
-                tech_and_tools={project.tech_and_tools}
-                tech={project.tech}
-              />
-            ))}
-          </div>
-    </section>    
-  </div>
-</BaseLayout>

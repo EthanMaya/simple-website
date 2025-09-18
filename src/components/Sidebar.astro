@@ -28,7 +28,7 @@ const { selectedItem } = Astro.props;
           class="niv-image"
         />
       </a>
-      <a href="https://github.com/EthanMaya" class="projects-container">
+      <a href="https://github.com/EthanMaya" target="_blank" rel="noopener noreferrer" class="projects-container">
         <img
           src="/assets/github-mark-white.svg"
           loading="eager"
@@ -36,7 +36,8 @@ const { selectedItem } = Astro.props;
           class="niv-image"
         />
       </a>
-      <a href="https://github.com/EthanMaya" class="projects-container">
+      <!-- 
+         <a href="https://github.com/EthanMaya" target="_blank" rel="noopener noreferrer" class="projects-container">
         <img
           src="/assets/discord-white-icon.svg"
           loading="eager"
@@ -44,6 +45,9 @@ const { selectedItem } = Astro.props;
           class="niv-image"
         />
       </a>
+      
+      -->
+   
       
         
       </div>
@@ -73,7 +77,7 @@ const { selectedItem } = Astro.props;
         }
       >
         <img
-          src="/assets/code.svg"
+          src="/assets/computer-956.svg"
           loading="eager"
           alt=""
           class="nav-link-image"
@@ -81,9 +85,9 @@ const { selectedItem } = Astro.props;
         <div>Computer Science</div>
       </a>
       <a
-        href="/aerospace"
+        href="/things-ive-done"
         class={`nav-link-container w-inline-block ${
-          selectedItem === 'aerospace' ? 'w--current' : ''
+          selectedItem === 'things-ive-done' ? 'w--current' : ''
         }`}
       >
         <img
@@ -92,21 +96,7 @@ const { selectedItem } = Astro.props;
           alt=""
           class="nav-link-image"
         />
-        <div>Aerospace</div>
-      </a>
-      <a
-        href="/personal-projects"
-        class={`nav-link-container w-inline-block ${
-          selectedItem === 'personal-projects' ? 'w--current' : ''
-        }`}
-      >
-        <img
-          src="/assets/favorite.svg"
-          loading="eager"
-          alt=""
-          class="nav-link-image"
-        />
-        <div>Personal projects</div>
+        <div>Things I've Done</div>
       </a>
       <a
         href="/blog"
@@ -115,7 +105,7 @@ const { selectedItem } = Astro.props;
         }`}
       >
         <img
-          src="/assets/favorite.svg"
+          src="/assets/blogger-white-icon.svg"
           loading="eager"
           alt=""
           class="nav-link-image"
@@ -129,7 +119,7 @@ const { selectedItem } = Astro.props;
         }`}
       >
         <img
-          src="/assets/favorite.svg"
+          src="/assets/account-white-icon.svg"
           loading="eager"
           alt=""
           class="nav-link-image"
@@ -143,7 +133,7 @@ const { selectedItem } = Astro.props;
         }`}
       >
         <img
-          src="/assets/favorite.svg"
+          src="/assets/round-information-outline-white-icon.svg"
           loading="eager"
           alt=""
           class="nav-link-image"

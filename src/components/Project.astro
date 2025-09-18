@@ -1,16 +1,34 @@
 ---
-const { title, desc, tech } = Astro.props;
+const { link, title, sum, desc, tech_and_tools="Technologies & tools", tech } = Astro.props;
 ---
 
-<div class="single-item">
-  <h3>{title}</h3>
-  <div class="project-desc project-desc-list w-richtext">
-    <ul role="list">
-      {desc.map(item => <li>{item}</li>)}
-    </ul>
-  </div>
-  <div class="mini-label-white">Technologies &amp; tools</div>
-  <div class="chips-container">
+{(link || title || sum || (desc && desc.length > 0) || (tech && tech.length > 0)) &&
+(<div class="single-item">
+  {title && 
+    (<h3>
+    {link ? (
+      <a href={link} target="_blank" rel="noopener noreferrer">{title}</a>
+    ) : (
+      <span>{title}</span>
+    )}
+  </h3>)
+  }
+ 
+  {sum && (<p>{sum}</p>)}
+  {desc && 
+    (<div class="project-desc project-desc-list w-richtext">
+      <ul role="list">
+        {desc.map(item => <li>{item}</li>)}
+      </ul>
+    </div>)
+  }
+  {tech_and_tools &&
+  (<div class="mini-label-white">{tech_and_tools}</div>)
+  }
+  {tech &&
+    (<div class="chips-container">
     {tech.map(techItem => <div class="single-chip">{techItem}</div>)}
-  </div>
-</div>
+    </div>)
+  }
+</div>)
+}

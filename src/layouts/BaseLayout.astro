@@ -7,7 +7,7 @@ interface HeaderProps {
   title: string;
 }
 
-const {title = "Title", backButton = null, showFooter = true} = Astro.props;
+const {title = "Title", backButton = false, showFooter = true} = Astro.props;
 const pathname = Astro.url.pathname;
 const selectedItem = pathname.split("/")[1] === "posts" ? "blog" : (pathname.split("/")[1] || "home");
 const titleBack = " | Ethan Maya"

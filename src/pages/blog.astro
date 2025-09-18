@@ -3,7 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro"
 const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
 ---
 
-<BaseLayout title="Blog", backButton = "/">
+<BaseLayout title="Blog", backButton="/">
   <div class="content-container">
     <h1>Check out my blog</h1>
     {allPosts.map((post: any) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
