@@ -1,5 +1,6 @@
 ---
 const { link, title, sum, desc, tech_and_tools="Technologies & tools", tech } = Astro.props;
+const tech_sorted = tech.sort((a, b) => a.localeCompare(b))
 ---
 
 {(link || title || sum || (desc && desc.length > 0) || (tech && tech.length > 0)) &&
@@ -27,7 +28,7 @@ const { link, title, sum, desc, tech_and_tools="Technologies & tools", tech } = 
   }
   {tech &&
     (<div class="chips-container">
-    {tech.map(techItem => <div class="single-chip">{techItem}</div>)}
+    {tech_sorted.map(techItem => <div class="single-chip">{techItem}</div>)}
     </div>)
   }
 </div>)

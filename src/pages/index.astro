@@ -1,5 +1,8 @@
 ---
+import { addIssueToContext, any } from "astro:schema";
 import BaseLayout from "../layouts/BaseLayout.astro"
+import {computer_science, skills_and_tools} from "./projects-data.js";
+const csTags = [...new Set(computer_science.concat(skills_and_tools).flatMap(p => p.tech))].sort((a, b) => a.localeCompare(b));
 ---
 <BaseLayout title="Home">
 <div class="fold-content">
@@ -14,10 +17,10 @@ import BaseLayout from "../layouts/BaseLayout.astro"
 </div>
 <div class="projects-section">
 <!-- Software Development -->
-<a href="/software-development" class="projects-container">
+<a href="/computer-science" class="projects-container">
 <div class="single-projects-category">
   <div class="projects-category-image-container">
-    <img src="./assets/browser.svg" loading="lazy" alt="" class="projects-category-image" />
+    <img src="./assets/computer-956.svg" loading="lazy" alt="" class="projects-category-image" />
   </div>
 </div>
 <div class="single-projects-content">
@@ -25,7 +28,9 @@ import BaseLayout from "../layouts/BaseLayout.astro"
   <div class="tech-tools-container">
     <div class="mini-label-white gray-color">Technologies &amp; tools</div>
     <div class="chips-container chips-container-small-width">
-      <div class="single-chip small-chip">A computer Science tag</div>
+      {csTags.map(tag => (
+              <div class="single-chip small-chip">{tag}</div>
+      ))}
     </div>
   </div>
 </div>
@@ -38,13 +43,13 @@ import BaseLayout from "../layouts/BaseLayout.astro"
   </div>
 </div>
 <div class="single-projects-content">
-  <h4>Things I've Done</h4>
-  <div class="tech-tools-container">
+  <h4>Other Things I've Done</h4>
+  <!-- <div class="tech-tools-container">
     <div class="mini-label-white gray-color">Technologies &amp; tools</div>
     <div class="chips-container chips-container-small-width">
       <div class="single-chip small-chip">Working</div>
     </div>
-  </div>
+  </div> -->
 </div>
 </a>  
 </BaseLayout>

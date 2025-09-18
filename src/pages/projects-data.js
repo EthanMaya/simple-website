@@ -1,4 +1,4 @@
-const computer_science = [
+export const computer_science = [
   {
     link: "https://github.com/EthanMaya/swansea-fs-dashboard",
     title: "Swansea University Race Engineering Car Dash",
@@ -9,7 +9,7 @@ const computer_science = [
       "Built CAN bus data handling for real-time ECU telemetry.",
       "Prototyped hardware and tested the system with ESP32 and Raspberry Pi Pico.",
     ],
-    tech: ["C/C++", "Python", "Platformio", "Espressif IDF", "Squareline Studio", "Arduino", "ESP32", "LVGL", "Raspberry Pi Pico", "CAN bus", "Git"]
+    tech: ["C", "C++", "Python", "Platformio", "Espressif IDF", "Squareline Studio", "Arduino", "ESP32", "LVGL", "Raspberry Pi Pico", "CAN bus", "Git"]
   },
   {
     link: "",
@@ -24,7 +24,7 @@ const computer_science = [
 
       "Deployed a custom VM solution to enable a teammate to complete coursework over the summer."
     ],
-    tech: ["Linux Mint", "Nixos", "QEMU", "virt-manager", "Docker Compose", "Tailscale", "VNC", "RDP", "Sunshine/Moonlight", "Git"]
+    tech: ["Linux Mint", "Nixos", "QEMU", "Virt-Manager", "Docker Compose", "Tailscale", "VNC", "RDP", "Sunshine/Moonlight", "Git"]
   },
   {
     link: "",
@@ -54,8 +54,23 @@ const computer_science = [
       "Modified an open-source theme (Codefolio) to add a blog, RSS, and theme customisation.",
     ],
     tech: ["Astro", "Git", "GitHub", "Raspberry Pi", "Ubuntu", "Cloudflare Tunnels", "Git hooks", "web hosting"]
-  },
-  {
+    },
+    {
+    link: "",
+    title: "Leet/Neetcode Multi-Language Testing Framework",
+    sum: "I built a lightweight framework to streamline practicing algorithm and coding challenge problems across multiple languages. The system defines tests in JSON and runs them against submitted solutions, reporting pass/fail results. Currently, the framework fully supports Python and has partial implementations for Java and C++. The long-term goal is to expand compatibility to other languages including JavaScript, C, C#, Go, PHP, and Rust.",
+        desc: [
+            "Designed a JSON-based format for defining test cases independent of programming language.",
+
+            "Implemented a Python runner to execute solutions against test suites.",
+
+            "Prototyped runners for Java and C++ to validate cross-language extensibility.",
+
+            "Planned expansion to additional languages for a universal practice platform.",
+        ],
+    tech: ["Python", "Java", "C++", "JSON"]
+    },
+    {
     link: "",
     title: "",
     sum: "",
@@ -66,7 +81,7 @@ const computer_science = [
   },
   
 ];
-const skills_and_tools = [
+export const skills_and_tools = [
  {
     link: "",
     title: "Programming Languages",
@@ -90,7 +105,7 @@ const skills_and_tools = [
   {
     link: "",
     title: "Virtualisation & Networking",
-    sum: "virt-manager, Docker Compose, Tailscale, VNC, RDP, Sunshine/Moonlight, Wake-on-LAN",
+    sum: "Virt-Manager, Docker Compose, Tailscale, VNC, RDP, Sunshine/Moonlight, Wake-on-LAN",
     desc: [
 
     ],

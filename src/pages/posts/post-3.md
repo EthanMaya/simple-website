@@ -33,7 +33,7 @@ Should I put any of my courseworks/am i actually allowed to by the uni?
 
 Bitburner: hacking game where you "hack" servers to make profit. written in javascript.
 GCHQ: I completed all the challenges for their scholarship but failed the interview.
-Leet/Neetcode: I made a script which allows me to put the test in json, then run the code and print out which tests it passes and fails. Currently only fully works in python but I have bits which can be run in java and c++. the plan is for it to be able to python, java, javascript, c++ rust.
+Leet/Neetcode: I made a repo which allows me to put the test in json, then run the code and print out which tests it passes and fails. Currently only fully works in python but I have bits which can be run in java and c++. the plan is for it to be able to run python, java, javascript, c, c++, c#, go, php, rust and possibly some other ones.
 
 The Personal website and hosting feels a bit weird how it's done, because of how there's the website and it's repo, and then my nixos stuff which isn't really a part of it other than also being on github. this is some info on the website if it helps. This website: uses cloudflared tunnel to route traffic to the pi. The pi has a git server on it, so when i push, i push to github and the pi at the same time, allowing me to automatically update my website with a git hook. The website uses Astro, the theme was got from a template called codefolio but then customised to have a blog, rss, and different theme (although I'll probably take out the blog, which makes the rss pointless?)
 Skills & Tools

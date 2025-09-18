@@ -1,0 +1,39 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Project from "../components/Project.astro";
+import {computer_science, skills_and_tools} from "./projects-data.js";
+---
+
+<BaseLayout title="Computer Science" backButton="/">
+  <div class="content-container">
+    <h1>Computer Science</h1>
+    <section class="items-container">
+        <div class="resouce-items">
+            {computer_science.map(project => (
+              <Project 
+                link={project.link}
+                title={project.title} 
+                sum={project.sum}
+                desc={project.desc}
+                tech={project.tech}
+              />
+            ))}
+          </div>
+    </section>
+    <h2>Skills & Tools</h2>
+    <section class="items-container">
+        <div class="resouce-items">
+            {skills_and_tools.map(project => (
+              <Project 
+                link={project.link}
+                title={project.title} 
+                sum={project.sum}
+                desc={project.desc}
+                tech_and_tools={project.tech_and_tools}
+                tech={project.tech}
+              />
+            ))}
+          </div>
+    </section>    
+  </div>
+</BaseLayout>
